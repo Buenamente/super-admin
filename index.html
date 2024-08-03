@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images in Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="pictures/horizontallogo.png" alt="Logo">
+            SmartLock System 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="btn btn-black" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Image -->
+    <img src="pictures/bgmain.png" alt="Main Image" class="main-image">
+
+    <!-- Content Section -->
+    <section class="section" id="about-us">
+    <div class="container text-center"> 
+        <div class="introbg">
+            <p class="mid3">OUR COMMUNITY</p>
+            <p class="mid2">Senti-Shield! Inc. at a Glance</p>
+            <p class="mid1">A Bit of Background</p>
+            <p class="mid"> Welcome to Senti-Shield, your premier school computer lab room management system
+                <br> designed to seamlessly integrate with all your school's technological needs. Located at the heart of your 
+                <br> educational environment, Senti-Shield ensures robust security, and user-friendly access to your computer labs.
+                <br> A short navigation through our intuitive interface will bring you to a world of organized, hassle-free lab management 
+                <br> freeing up valuable time for educators and students alike. With Senti-Shield, managing computer lab resources has never been easier. 
+                <br> From streamlined registration systems to real-time availability tracking, our platform is tailored to enhance productivity and reduce administrative burden.
+            </p>
+        </div>
+    </div>
+    </section>
+    <div class="pagecontent">
+        <div class="midcontent">
+            <div class="f1 text-center"> 
+                <p class="p0 h1">Facilities And Equipment</p>
+            </div>
+            <div class="grid-container">
+                <div class="g1 grid-item">
+                    <p class="p1">Room Management</p>
+                    <p class="p2">
+                        Room Management System significantly enhances the security and 
+                        efficiency of access control within educational institutions, specifically 
+                        targeting computer laboratories. Traditional methods of securing these facilities 
+                        often involve manual processes that are both time-consuming and prone to security risks, 
+                        such as unauthorized access and potential theft or damage of valuable equipment.
+                    </p>
+                </div>
+                <div class="c1 grid-item">
+                    <img class="c2" src="assets/room.jpeg" alt="Room Management">
+                </div>
+                <div class="g2 grid-item">
+                    <p class="p3">RFID</p>
+                    <p class="p4">
+                        RFID serves as a critical component for enhancing the security
+                        and efficiency of the room management system. RFID, or Radio-Frequency Identification,
+                        is a technology that utilizes electromagnetic fields to automatically identify
+                        and track tags attached to objects. RFID will be employed to control access to 
+                        computer laboratories within educational institutions.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <img class="c3" src="assets/RFID.jpg" alt="RFID">
+                </div>
+                <div class="g3 grid-item">
+                    <p class="p5">Passcode Key</p>
+                    <p class="p6">
+                        A passcode key plays a vital role in providing an additional layer of security and flexibility
+                        for the room management system. A passcode entry system involves the input of a unique
+                        sequence of characters, typically numbers, by authorized users to gain access to a secured area.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <img class="c4" src="assets/Passcode key.jpg" alt="Passcode Key">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">our Team</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Senti-Shield</span></p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

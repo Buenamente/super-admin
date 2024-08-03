@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Modal Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Button to open the modal -->
+<button id="openModalBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="modalForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address"><br><br>
+      
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact"><br><br>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="role">Role:</label>
+      <input type="text" id="role" name="role"><br><br>
+      
+      <div class="modal-buttons">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="button" class="delete-btn">Delete</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<style>
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Modal buttons */
+.modal-buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.submit-btn, .delete-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+}
+
+</style>
+<script>
+  // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModalBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Handle form submission
+var form = document.getElementById("modalForm");
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+  // Here you can handle form data submission
+  console.log("Form submitted");
+});
+
+// Handle delete button click
+var deleteBtn = document.querySelector(".delete-btn");
+deleteBtn.addEventListener("click", function() {
+  // Here you can handle delete button action
+  console.log("Delete button clicked");
+});
+
+</script>
+</body>
+</html>
